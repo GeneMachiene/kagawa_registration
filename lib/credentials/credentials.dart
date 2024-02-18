@@ -2,6 +2,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:kagawa_registration/credentials/add.dart';
+import 'package:kagawa_registration/experiences_skills/experiences_skills.dart';
 
 class Credentials extends StatelessWidget {
   Credentials({super.key});
@@ -62,8 +63,8 @@ class Credentials extends StatelessWidget {
                     padding: const EdgeInsets.all(15),
                     child: Column(
                       children: [
-                        Text('Add some Credentials to increase trust.'),
-                        SizedBox(
+                        const Text('Add some Credentials to increase trust.'),
+                        const SizedBox(
                           width: double.infinity,
                           height: 50,
                           child: Card(
@@ -106,7 +107,7 @@ class Credentials extends StatelessWidget {
                             onPressed: () {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => const Placeholder()),
+                                MaterialPageRoute(builder: (context) => Experiences()),
                               );
                             },
                             child: const Padding(
@@ -121,7 +122,7 @@ class Credentials extends StatelessWidget {
                             onPressed: () {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => const Placeholder()),
+                                MaterialPageRoute(builder: (context) => Experiences()),
                               );
                             },
                             child: const Padding(
