@@ -1,6 +1,6 @@
-import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
+import 'package:kagawa_registration/info/info.dart';
 
 class Address extends StatelessWidget {
   Address({super.key});
@@ -70,7 +70,7 @@ class Address extends StatelessWidget {
                           width: double.infinity,
                           child: TextFormField(
                             style: theme.textTheme.titleMedium,
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                               labelText: 'Street',
                               border: OutlineInputBorder(),
                               hintText: 'Del Pilar St.',
@@ -84,7 +84,7 @@ class Address extends StatelessWidget {
                           width: double.infinity,
                           child: TextFormField(
                             style: theme.textTheme.titleMedium,
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                               border: OutlineInputBorder(),
                               labelText: 'House No.',
                               hintText: 'House no. 7',
@@ -98,7 +98,7 @@ class Address extends StatelessWidget {
                           width: double.infinity,
                           child: TextFormField(
                             style: theme.textTheme.titleMedium,
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                               labelText: 'Subdivision',
                               border: OutlineInputBorder(),
                               hintText: 'Filinvest Subdv.',
@@ -119,7 +119,7 @@ class Address extends StatelessWidget {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => const Placeholder()),
+                            MaterialPageRoute(builder: (context) => Info()),
                           );
                         },
                         child: const Padding(
