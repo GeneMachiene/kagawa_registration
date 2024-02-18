@@ -1,14 +1,15 @@
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-import 'package:kagawa_registration/address/address.dart';
 
-class Phone extends StatelessWidget {
-  const Phone({super.key});
+class Address extends StatelessWidget {
+  Address({super.key});
+  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+
     return Scaffold(
       appBar: AppBar(
           leading: IconButton(
@@ -21,7 +22,7 @@ class Phone extends StatelessWidget {
       body: Column(
         children: [
           Image.asset(
-            'assets/Message.png',
+            'assets/Location.png',
             width: double.infinity,
             fit: BoxFit.fitWidth,
           ),
@@ -32,7 +33,7 @@ class Phone extends StatelessWidget {
                 Column(
                   children: [
                     Text(
-                      'Enter your Phone No.',
+                      'Where do you live?',
                       style: GoogleFonts.lexendDeca(
                           textStyle: theme.textTheme.headlineMedium,
                           fontWeight: FontWeight.w700
@@ -59,26 +60,56 @@ class Phone extends StatelessWidget {
                   ],
                 ),
 
-                SizedBox(
-                  width: 230  ,
-                  child: TextFormField(
-                    style: theme.textTheme.titleMedium,
-                    keyboardType: TextInputType.number,
-                    inputFormatters: [
-                      FilteringTextInputFormatter.digitsOnly,
-                      LengthLimitingTextInputFormatter(10),
-                    ],
-                    decoration: InputDecoration(
-                      icon: Text(
-                        '+63',
-                        style: theme.textTheme.titleMedium,
+                Form(
+                  key: _formKey,
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(20),
+                        child: SizedBox(
+                          width: double.infinity,
+                          child: TextFormField(
+                            style: theme.textTheme.titleMedium,
+                            decoration: InputDecoration(
+                              labelText: 'Street',
+                              border: OutlineInputBorder(),
+                              hintText: 'Del Pilar St.',
+                            ),
+                          ),
+                        ),
                       ),
-                      border: OutlineInputBorder(),
-
-                      hintText: '1234567890',
-                    ),
+                      Padding(
+                        padding: const EdgeInsets.all(20),
+                        child: SizedBox(
+                          width: double.infinity,
+                          child: TextFormField(
+                            style: theme.textTheme.titleMedium,
+                            decoration: InputDecoration(
+                              border: OutlineInputBorder(),
+                              labelText: 'House No.',
+                              hintText: 'House no. 7',
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(20),
+                        child: SizedBox(
+                          width: double.infinity,
+                          child: TextFormField(
+                            style: theme.textTheme.titleMedium,
+                            decoration: InputDecoration(
+                              labelText: 'Subdivision',
+                              border: OutlineInputBorder(),
+                              hintText: 'Filinvest Subdv.',
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
+
 
                 Padding(
                   padding: const EdgeInsets.all(50),
@@ -88,12 +119,12 @@ class Phone extends StatelessWidget {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => Address()),
+                            MaterialPageRoute(builder: (context) => const Placeholder()),
                           );
                         },
                         child: const Padding(
                           padding: EdgeInsets.all(15),
-                          child: Text("Verify"),
+                          child: Text("Next"),
                         )
                     ),
                   ),
