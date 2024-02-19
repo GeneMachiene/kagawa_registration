@@ -2,39 +2,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:kagawa_registration/pages/description.dart';
+import 'package:kagawa_registration/data/ethnicities.dart';
 
-List<String> philippineEthnicities = [
-  'Tagalog',
-  'Cebuano',
-  'Ilocano',
-  'Bisaya',
-  'Kapampangan',
-  'Bicolano',
-  'Waray',
-  'Pangasinense',
-  'Hiligaynon (Ilonggo)',
-  'Tausug',
-  'Maguindanaoan',
-  'Maranao',
-  'Kalinga',
-  'Ivatan',
-  'Manobo',
-  'Ifugao',
-  'Aeta',
-  'Igorot',
-  'Lumad',
-  'Subanen',
-  'Yakan',
-  'Bajau',
-  'Samal',
-  'Agta',
-  'Mangyan',
-  'Ibaloi',
-  'Ati',
-  'Badjao',
-  'Hanunoo',
-  'Jama Mapun'
-];
 
 class Info extends StatelessWidget {
   Info({super.key});
