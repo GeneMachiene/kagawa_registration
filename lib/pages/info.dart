@@ -1,7 +1,7 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
-import 'package:kagawa_registration/description/description.dart';
+import 'package:kagawa_registration/pages/description.dart';
 
 List<String> philippineEthnicities = [
   'Tagalog',

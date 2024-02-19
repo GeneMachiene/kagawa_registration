@@ -1,6 +1,6 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-import 'package:kagawa_registration/landing/landing.dart';
+import 'package:kagawa_registration/pages/landing.dart';
 
 class Gallery extends StatelessWidget {
   Gallery({super.key});

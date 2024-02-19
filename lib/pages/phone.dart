@@ -1,7 +1,7 @@
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-import 'package:kagawa_registration/address/address.dart';
+import 'package:kagawa_registration/pages/address.dart';
 
 class Phone extends StatelessWidget {
   const Phone({super.key});

@@ -1,6 +1,6 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
-import 'package:kagawa_registration/info/info.dart';
+import 'package:kagawa_registration/pages/info.dart';
 
 class Address extends StatelessWidget {
   Address({super.key});

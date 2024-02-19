@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:kagawa_registration/phone/phone.dart';
+import 'package:kagawa_registration/pages/phone.dart';
 
 class Landing extends StatelessWidget {
   const Landing({super.key});
