@@ -100,7 +100,7 @@ class Description extends StatelessWidget {
                     children: [
                       SizedBox(
                         width: double.infinity,
-                        child: ElevatedButton(
+                        child: TextButton(
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -115,7 +115,7 @@ class Description extends StatelessWidget {
                       ),
                       SizedBox(
                         width: double.infinity,
-                        child: OutlinedButton(
+                        child: ElevatedButton(
                             onPressed: () {
                               Navigator.push(
                                 context,

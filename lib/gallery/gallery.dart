@@ -91,7 +91,7 @@ class Gallery extends StatelessWidget {
                   padding: const EdgeInsets.all(50),
                   child: SizedBox(
                     width: double.infinity,
-                    child: OutlinedButton(
+                    child: ElevatedButton(
                         onPressed: () {
                           Navigator.pushReplacement(
                             context,

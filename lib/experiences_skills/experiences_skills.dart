@@ -76,7 +76,7 @@ class Experiences extends StatelessWidget {
                               children: [
                                 SizedBox(
                                   width: double.infinity,
-                                  child: ElevatedButton(
+                                  child: OutlinedButton(
                                       onPressed: () {
                                         Navigator.push(
                                           context,
@@ -102,7 +102,7 @@ class Experiences extends StatelessWidget {
                     children: [
                       SizedBox(
                         width: double.infinity,
-                        child: ElevatedButton(
+                        child: TextButton(
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -117,7 +117,7 @@ class Experiences extends StatelessWidget {
                       ),
                       SizedBox(
                         width: double.infinity,
-                        child: OutlinedButton(
+                        child: ElevatedButton(
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -317,7 +317,7 @@ class AddExp extends StatelessWidget {
                     children: [
                       SizedBox(
                         width: double.infinity,
-                        child: OutlinedButton(
+                        child: ElevatedButton(
                             onPressed: () {
                               Navigator.pop(context);
                             },

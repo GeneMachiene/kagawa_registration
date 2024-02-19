@@ -76,7 +76,7 @@ class Landing extends StatelessWidget {
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(15),
-                        child: OutlinedButton(
+                        child: ElevatedButton(
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -91,7 +91,7 @@ class Landing extends StatelessWidget {
                       ),
                       Padding(
                         padding: const EdgeInsets.all(15),
-                        child: OutlinedButton(
+                        child: ElevatedButton(
                             onPressed: () {
 
                             },

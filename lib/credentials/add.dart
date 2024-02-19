@@ -149,7 +149,7 @@ class AddCred extends StatelessWidget {
                     children: [
                       SizedBox(
                         width: double.infinity,
-                        child: OutlinedButton(
+                        child: ElevatedButton(
                             onPressed: () {
                               Navigator.pop(context);
                             },

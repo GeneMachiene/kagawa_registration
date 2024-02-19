@@ -20,15 +20,21 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'KaGawa Registration',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: GoogleFonts.lexendDecaTextTheme(),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue,
+            foregroundColor: Colors.white,
+          )
+        ),
         outlinedButtonTheme: OutlinedButtonThemeData(
             style: OutlinedButton.styleFrom(
-                backgroundColor: Colors.blue,
-                foregroundColor: Colors.white
+              elevation: 0.0,
+              side: const BorderSide(color: Colors.black26),
             )
         ),
         useMaterial3: true,
