@@ -1,5 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_form_builder/flutter_form_builder.dart';
 import 'package:kagawa_registration/common/layout.dart';
 import 'package:kagawa_registration/pages/address.dart';
 
@@ -21,7 +22,8 @@ class Phone extends StatelessWidget {
           children: [
             SizedBox(
               width: 230  ,
-              child: TextFormField(
+              child: FormBuilderTextField(
+                name: 'phone_number',
                 style: theme.textTheme.titleMedium,
                 keyboardType: TextInputType.number,
                 inputFormatters: [

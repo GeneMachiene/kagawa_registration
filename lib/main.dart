@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:kagawa_registration/pages/credentials.dart';
 import 'firebase_options.dart';
 import 'pages/landing.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -39,7 +40,7 @@ class App extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const Landing(),
+      home: Landing(),
     );
   }
 }
